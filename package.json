@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "i": "^0.3.7",
+    "react-chatbot-kit": "^2.1.2"
+  }
+}
