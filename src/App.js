@@ -10,21 +10,7 @@ const config = {
 function App() {
   const [messages, setMessages] = useState([]);
 
-  function handleUserInput(input) {
-    setMessages([...messages, { text: input, sender: 'user' }]);
-    // handle user input and add bot response
-    let response = '';
-    if (input.toLowerCase().includes('menu')) {
-      response = 'Here is our menu: ...'; // add menu items
-    } else if (input.toLowerCase().includes('order')) {
-      response = 'What would you like to order?'; 
-    } else if (input.toLowerCase().includes('confirm')) {
-      response = 'Your order has been confirmed. Thank you!';
-    } else {
-      response = "I'm sorry, I didn't understand. Please ask about the menu or ordering.";
-    }
-    setMessages([...messages, { text: response, sender: 'bot' }]);
-  }
+  
 
   function handleKeyDown(event) {
     if (event.key === 'Enter' && event.target.value) {
